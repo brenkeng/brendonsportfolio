@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1440, maximum-scale=1.0" />
+    <link rel="shortcut icon" href="./img/favicon.png" />
+    <meta name="og:type" content="website" />
+    <meta name="twitter:card" content="photo" />
+    <link rel="stylesheet" type="text/css" href="css/about.css" />
+    <link rel="stylesheet" type="text/css" href="css/styleguide.css" />
+    <link rel="stylesheet" type="text/css" href="css/globals.css" />
+  </head>
+  <body style="margin: 0; background: #ffffff">
+    <input type="hidden" id="anPageName" name="page" value="about" />
+    <div class="container-center-horizontal">
+      <div class="about screen">
+        <div class="flex-col">
+          <a href="home.html" class="align-self-flex-start"
+            ><div class="name engraversbold-regular-normal-black-24px animate-enter30">BRendon</div>
+          </a>
+          <div class="m-eet-brendon engraversbold-regular-normal-black-48px animate-enter27">MEet Brendon</div>
+          <div class="overlap-group">
+            <p class="whats-up-im-a-bro animate-enter28">
+              What’s up! I’m a Brooklyn based UX Designer. I currently work as a Technology Director/Teacher and
+              Brooklyn Excelsior Charter School, teaching grades Kindergarten - 8th.<br /><br /><br />I’ve received my
+              bachelors in Environmental Studies at Iona College. Also obtained a masters degree from Pratt Instutite in
+              Information Experience Design. <br /><br />You’re probably saying thats a big transition. I know, it
+              wasn’t easy but I manage to perserve and beat the odds. I found myself after undergrad not doing what I
+              loved, which was brainstorming and designing. I took a leap of faith and now I’m here designing my
+              porfolio. <br /><br />When I take off my versatile working hats I like to indulge in great food,
+              photography, and working out. Recently I decided to become a more confident swimmer and that I should
+              enroll in swimming lessons. Swimming is something I love but I’m not great at it, my goal is to be able to
+              jump into the ocean and not fear that some large organism is going to brush the side of my leg and drag me
+              under. <br /><br />Take a look at my
+            </p>
+            <div class="resume animate-enter31">RESUME</div>
+          </div>
+        </div>
+        <div class="flex-col-1">
+          <img class="dsc00712-1 animate-enter26" src="img/dsc00712-1@2x.png" />
+          <a href="https://www.linkedin.com/in/brendon-gabriel-7a4409142/" target="_blank"
+            ><img class="akar-iconslinkedin-fill" src="img/akar-icons-linkedin-fill@2x.png" />
+          </a>
+        </div>
+        <a href="work.html"><div class="work helvetica-regular-normal-black-18px animate-enter29">WORK</div> </a>
+      </div>
+    </div>
+    <script>
+      function ShowOnScroll() {
+        this.toShow = [];
+        this.nextEventY = undefined;
+      }
+
+      ShowOnScroll.prototype.show = function (e) {
+        e.style.display = "";
+      };
+
+      ShowOnScroll.prototype.hide = function (e) {
+        e.style.display = "none";
+      };
+
+      ShowOnScroll.prototype.getTop = function (e) {
+        if (e.Top != undefined && e.Top != 0) {
+          return e.Top;
+        }
+        var top = 0;
+        var iter = e;
+        do {
+          top += iter.offsetTop || 0;
+          iter = iter.offsetParent;
+        } while (iter);
+        e.Top = top;
+        return top;
+      };
+
+      ShowOnScroll.prototype.onScroll = function () {
+        var screenBottom = window.pageYOffset + window.innerHeight;
+        if (this.nextEventY == undefined || this.nextEventY > screenBottom) {
+          return;
+        }
+        this.nextEventY = undefined;
+        for (var i = 0; i < this.toShow.length; i++) {
+          var e = this.toShow[i];
+          var top = this.getTop(e);
+          if (top < screenBottom) {
+            this.show(e);
+            this.toShow.shift();
+            i--;
+          } else {
+            this.nextEventY = top;
+            break;
+          }
+        }
+      };
+
+      ShowOnScroll.prototype.resetScrolling = function () {
+        // Clear state
+        var screenBottom = window.pageYOffset + window.innerHeight;
+        for (var i = 0; i < this.toShow.length; i++) {
+          var e = this.toShow[i];
+          this.show(e);
+        }
+        this.toShow = [];
+        this.nextEventY == undefined;
+
+        // Collect items
+        var itemsToShowOnScroll = Array.prototype.slice.call(document.getElementsByTagName("*"));
+        itemsToShowOnScroll = itemsToShowOnScroll.filter(function (e) {
+          return e.getAttribute("show-on-scroll") != undefined;
+        });
+        var getTop = this.getTop;
+        itemsToShowOnScroll.sort(function (a, b) {
+          return getTop(a) - getTop(b);
+        });
+        for (var i = 0; i < itemsToShowOnScroll.length; i++) {
+          var e = itemsToShowOnScroll[i];
+          var top = this.getTop(e);
+          if (top < screenBottom) {
+            continue;
+          }
+          this.toShow.push(e);
+          this.hide(e);
+          this.nextEventY = this.nextEventY != undefined ? this.nextEventY : top;
+        }
+      };
+
+      ShowOnScroll.prototype.handleEvent = function (e) {
+        switch (e.type) {
+          case "scroll":
+            this.onScroll();
+            break;
+          case "resize":
+            this.resetScrolling();
+            break;
+        }
+      };
+
+      ShowOnScroll.prototype.init = function () {
+        this.resetScrolling();
+        window.addEventListener("scroll", this);
+        window.addEventListener("resize", this);
+      };
+
+      // After anima-src
+      setTimeout(function () {
+        var instShowOnScroll = new ShowOnScroll();
+        instShowOnScroll.init();
+      }, 250);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,202 @@
+/* screen - home */
+
+.home {
+  align-items: flex-end;
+  background-color: #fffefe;
+  display: flex;
+  flex-direction: column;
+  min-height: 900px;
+  padding: 67px 87px;
+  width: 1440px;
+}
+
+.home .work {
+  cursor: pointer;
+  letter-spacing: 2.07px;
+  line-height: 18px;
+  margin-bottom: -18px;
+  margin-right: 180px;
+  min-height: 0;
+  min-width: 63px;
+  opacity: 0;
+  transform: translate(0, 25px);
+}
+
+.home .work.animate-enter4 {
+  animation: animate-enter4-frames 1.00s ease-in-out 0.00s 1 normal forwards;
+  opacity: 0;
+  transform: translate(0, 25px);
+}
+
+@keyframes animate-enter4-frames {
+  from{opacity: 0;
+transform: translate(0, 25px);
+}
+to{opacity: 1;
+transform: translate(0,0);
+}
+}
+
+.home .about {
+  cursor: pointer;
+  letter-spacing: 2.07px;
+  line-height: 18px;
+  margin-bottom: -18px;
+  margin-right: 50px;
+  min-height: 0;
+  min-width: 71px;
+  opacity: 0;
+  transform: translate(0, 25px);
+}
+
+.home .about.animate-enter5 {
+  animation: animate-enter5-frames 1.00s ease-in-out 0.00s 1 normal forwards;
+  opacity: 0;
+  transform: translate(0, 25px);
+}
+
+@keyframes animate-enter5-frames {
+  from{opacity: 0;
+transform: translate(0, 25px);
+}
+to{opacity: 1;
+transform: translate(0,0);
+}
+}
+
+.home .flex-row {
+  align-items: flex-end;
+  display: flex;
+  height: 384px;
+  margin-top: 75px;
+  min-width: 1144px;
+}
+
+.home .flex-col {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  min-height: 384px;
+  width: 282px;
+}
+
+.home .text {
+  align-self: center;
+  letter-spacing: 0;
+  margin-right: 28.0px;
+  min-height: 14px;
+  min-width: 0;
+}
+
+.home .x1 {
+  display: block;
+  height: 37px;
+  margin-top: 220px;
+  opacity: 0;
+  transform: translate(0, 25px);
+  width: 72px;
+}
+
+.home .x1.animate-enter3 {
+  animation: animate-enter3-frames 1.00s ease-in-out 0.00s 1 normal forwards;
+  display: block;
+  opacity: 0;
+  transform: translate(0, 25px);
+}
+
+@keyframes animate-enter3-frames {
+  from{opacity: 0;
+transform: translate(0, 25px);
+}
+to{opacity: 1;
+transform: translate(0,0);
+}
+}
+
+.home .name {
+  cursor: pointer;
+  letter-spacing: 0;
+  min-height: 84px;
+  opacity: 0;
+  transform: translate(0, 25px);
+}
+
+.home .name.animate-enter {
+  animation: animate-enter-frames 1.00s ease-in-out 0.00s 1 normal forwards;
+  opacity: 0;
+  transform: translate(0, 25px);
+}
+
+@keyframes animate-enter-frames {
+  from{opacity: 0;
+transform: translate(0, 25px);
+}
+to{opacity: 1;
+transform: translate(0,0);
+}
+}
+
+.home .ux-designer {
+  color: #9b9a9a;
+  font-family: var(--font-family-lato);
+  font-size: var(--font-size-xl);
+  font-weight: 400;
+  letter-spacing: 0;
+  min-height: 29px;
+  opacity: 0;
+  transform: translate(0, 25px);
+}
+
+.home .ux-designer.animate-enter1 {
+  animation: animate-enter1-frames 1.00s ease-in-out 0.00s 1 normal forwards;
+  opacity: 0;
+  transform: translate(0, 25px);
+}
+
+@keyframes animate-enter1-frames {
+  from{opacity: 0;
+transform: translate(0, 25px);
+}
+to{opacity: 1;
+transform: translate(0,0);
+}
+}
+
+.home .flex-col-1 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  margin-left: 135px;
+  min-height: 107px;
+  width: 727px;
+}
+
+.home .text-1 {
+  letter-spacing: 0;
+  margin-left: 67px;
+  min-height: 14px;
+}
+
+.home .i-enjoy-creating-bet {
+  letter-spacing: 0;
+  min-height: 93px;
+  opacity: 0;
+  transform: translate(0, 25px);
+  width: 727px;
+}
+
+.home .i-enjoy-creating-bet.animate-enter2 {
+  animation: animate-enter2-frames 1.00s ease-in-out 0.00s 1 normal forwards;
+  opacity: 0;
+  transform: translate(0, 25px);
+}
+
+@keyframes animate-enter2-frames {
+  from{opacity: 0;
+transform: translate(0, 25px);
+}
+to{opacity: 1;
+transform: translate(0,0);
+}
+}

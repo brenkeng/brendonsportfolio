@@ -1,0 +1,100 @@
+/* screen - graphics */
+
+.graphics {
+  align-items: center;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  min-height: 6880px;
+  padding: 39px 63px;
+  width: 1436px;
+}
+
+.graphics .flex-row {
+  align-items: flex-end;
+  align-self: flex-start;
+  display: flex;
+  height: 28px;
+  min-width: 1240px;
+}
+
+.graphics .name {
+  cursor: pointer;
+  letter-spacing: 0;
+  min-height: 28px;
+  min-width: 180px;
+}
+
+.graphics .work {
+  cursor: pointer;
+  letter-spacing: 2.07px;
+  line-height: 18px;
+  margin-left: 839px;
+  min-height: 0;
+  min-width: 63px;
+}
+
+.graphics .about {
+  cursor: pointer;
+  letter-spacing: 2.07px;
+  line-height: 18px;
+  margin-left: 87px;
+  min-height: 0;
+  min-width: 71px;
+}
+
+.graphics .name-1 {
+  letter-spacing: 0;
+  margin-top: 94px;
+  min-height: 110px;
+  min-width: 950px;
+  text-align: center;
+}
+
+.graphics .electric-cat-1 {
+  height: 850px;
+  margin-left: 19.0px;
+  margin-top: 83px;
+  object-fit: cover;
+  width: 567px;
+}
+
+.graphics .ramen-bowl-1 {
+  height: 520px;
+  margin-left: 18.0px;
+  margin-top: 149px;
+  object-fit: cover;
+  width: 390px;
+}
+
+.graphics .typeface-1 {
+  height: 775px;
+  margin-left: 18.0px;
+  margin-top: 148px;
+  object-fit: cover;
+  width: 548px;
+}
+
+.graphics .protect-her-1 {
+  height: 828px;
+  margin-left: 18.0px;
+  margin-top: 144px;
+  object-fit: cover;
+  width: 552px;
+}
+
+.graphics .infographic-1 {
+  height: 1839px;
+  margin-left: 18.0px;
+  margin-top: 92px;
+  object-fit: cover;
+  width: 586px;
+}
+
+.graphics .travis-1 {
+  height: 908px;
+  margin-left: 18.0px;
+  margin-top: 129px;
+  object-fit: cover;
+  width: 604px;
+}
