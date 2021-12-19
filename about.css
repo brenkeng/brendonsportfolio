@@ -1,0 +1,206 @@
+/* screen - about */
+
+.about {
+  align-items: flex-start;
+  background-color: var(--white);
+  display: flex;
+  height: 900px;
+  min-width: 1440px;
+  padding: 0 64px;
+}
+
+.about .flex-col {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  margin-top: 39px;
+  min-height: 625px;
+  width: 765px;
+}
+
+.about .name {
+  align-self: flex-start;
+  cursor: pointer;
+  letter-spacing: 0;
+  min-height: 28px;
+  opacity: 0;
+  transform: translate(0, 25px);
+}
+
+.about .name.animate-enter30 {
+  animation: animate-enter30-frames 1.00s ease-in-out 0.00s 1 normal forwards;
+  opacity: 0;
+  transform: translate(0, 25px);
+}
+
+@keyframes animate-enter30-frames {
+  from{opacity: 0;
+transform: translate(0, 25px);
+}
+to{opacity: 1;
+transform: translate(0,0);
+}
+}
+
+.about .m-eet-brendon {
+  letter-spacing: 0;
+  margin-top: 108px;
+  min-height: 60px;
+  opacity: 0;
+  transform: translate(0, 25px);
+  width: 586px;
+}
+
+.about .m-eet-brendon.animate-enter27 {
+  animation: animate-enter27-frames 1.00s ease-in-out 0.00s 1 normal forwards;
+  opacity: 0;
+  transform: translate(0, 25px);
+}
+
+@keyframes animate-enter27-frames {
+  from{opacity: 0;
+transform: translate(0, 25px);
+}
+to{opacity: 1;
+transform: translate(0,0);
+}
+}
+
+.about .overlap-group {
+  height: 429px;
+  margin-right: 19px;
+  position: relative;
+  width: 567px;
+}
+
+.about .whats-up-im-a-bro {
+  color: #888888;
+  font-family: var(--font-family-lato);
+  font-size: var(--font-size-s);
+  font-weight: 400;
+  left: 0;
+  letter-spacing: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  transform: translate(0, 25px);
+  width: 567px;
+}
+
+.about .whats-up-im-a-bro.animate-enter28 {
+  animation: animate-enter28-frames 1.00s ease-in-out 0.00s 1 normal forwards;
+  opacity: 0;
+  transform: translate(0, 25px);
+}
+
+@keyframes animate-enter28-frames {
+  from{opacity: 0;
+transform: translate(0, 25px);
+}
+to{opacity: 1;
+transform: translate(0,0);
+}
+}
+
+.about .resume {
+  color: #888888;
+  font-family: var(--font-family-engravers_bold-regular);
+  font-size: var(--font-size-s);
+  font-weight: 400;
+  left: 107px;
+  letter-spacing: 0;
+  opacity: 0;
+  position: absolute;
+  top: 290px;
+  transform: translate(0, 25px);
+}
+
+.about .resume.animate-enter31 {
+  animation: animate-enter31-frames 1.00s ease-in-out 0.00s 1 normal forwards;
+  opacity: 0;
+  transform: translate(0, 25px);
+}
+
+@keyframes animate-enter31-frames {
+  from{opacity: 0;
+transform: translate(0, 25px);
+}
+to{opacity: 1;
+transform: translate(0,0);
+}
+}
+
+.about .flex-col-1 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 46px;
+  margin-top: 204px;
+  min-height: 528px;
+  width: 150px;
+  padding: 5px;
+
+}
+
+.about .dsc00712-1 {
+  display: block;
+  height: 472px;
+  object-fit: cover;
+  opacity: 0;
+  transform: translate(0, 25px);
+  width: 322px;
+}
+
+.about .dsc00712-1.animate-enter26 {
+  animation: animate-enter26-frames 1.00s ease-in-out 0.00s 1 normal forwards;
+  display: block;
+  opacity: 0;
+  transform: translate(0, 25px);
+}
+
+@keyframes animate-enter26-frames {
+  from{opacity: 0;
+transform: translate(0, 25px);
+}
+to{opacity: 1;
+transform: translate(0,0);
+}
+}
+
+.about .akar-iconslinkedin-fill {
+  cursor: pointer;
+  height: 24px;
+  margin-top: 32px;
+  transition: all 0.2s ease;
+  width: 24px;
+}
+
+.about .akar-iconslinkedin-fill:hover {
+  filter: blur(10px);
+}
+
+.about .work {
+  cursor: pointer;
+  letter-spacing: 2.07px;
+  line-height: 18px;
+  margin-left: 43px;
+  margin-top: 63px;
+  min-height: 0;
+  opacity: 0;
+  transform: translate(0, 25px);
+}
+
+.about .work.animate-enter29 {
+  animation: animate-enter29-frames 1.00s ease-in-out 0.00s 1 normal forwards;
+  opacity: 0;
+  transform: translate(0, 25px);
+}
+
+@keyframes animate-enter29-frames {
+  from{opacity: 0;
+transform: translate(0, 25px);
+}
+to{opacity: 1;
+transform: translate(0,0);
+}
+}
